@@ -1,0 +1,23 @@
+// Create by : Peter zhu
+// Create on : May
+// This is Bike class
+
+public class Bike extends Vehicle{
+	
+	int _gearNumber;
+
+	public Bike(int licensePlateNumber, int numberOfDoor, int speed, int max, String color, int gear) {
+		super(000, 0, 12, 20, "red");
+		_gearNumber = gear;
+		super.speak();
+		System.out.println("The gear number of bike is " + _gearNumber);
+		System.out.println();
+		
+	}
+	
+	public void speak() {
+		super.speak();
+		System.out.println("The valume of the truck is " + _gearNumber);
+	}
+	
+}
